@@ -49,7 +49,7 @@ const Home = () => {
         <div className={styles.right} onClick={nextSld}>
           <IoIosArrowForward className={styles.arrows} />
         </div>
-        <div className={styles.imgSlide}>
+        <div className={styles.imgSlides}>
           <Slides slides={slides} imgSlide={imgSlide} />
         </div>
       </div>
