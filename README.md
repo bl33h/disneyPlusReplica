@@ -1,13 +1,11 @@
 # disneyPlusReplica
 A  replica of the Disney+ principal page built using React and Vite. The Vitest and Storybook technologies were also implemented for testing.
 
-<h1 align="center">
+<p align="center">
   <br>
-  ![disney](https://lumiere-a.akamaihd.net/v1/images/es_house-of-disney-plus_mob_m_57d7f86e.jpeg?region=0,0,800,600&width=768)
+  <img src="https://lumiere-a.akamaihd.net/v1/images/es_house-of-disney-plus_mob_m_57d7f86e.jpeg?region=0,0,800,600&width=768" alt="Disney+" width="400">
   <br>
-  Disney+ replica
-  <br>
-</h1>
+</p>
 
 <h4 align="center"> Copy of the Disney+ homepage made in React </h4>
 
@@ -15,7 +13,7 @@ A  replica of the Disney+ principal page built using React and Vite. The Vitest 
 <p align="center" >
   <a href="#features">Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#tests">Testing</a> •
+  <a href="#testing">Testing</a> •
   <a href="#packages">Packages</a> 
   
 </p>
