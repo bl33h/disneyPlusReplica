@@ -7,9 +7,6 @@ A  replica of the Disney+ principal page built using React and Vite. The Vitest 
   <br>
 </p>
 
-<h4 align="center"> Disney+ principal page replica</h4>
-
-
 <p align="center" >
   <a href="#features">Features</a> •
   <a href="#how-to-use">How To Use</a> •
@@ -76,7 +73,7 @@ $ npm test
 * For Storybook
 ```bash
 # Run the test
-$ npm run storybooks
+$ npm run storybook
 ```
 
 ## Packages
