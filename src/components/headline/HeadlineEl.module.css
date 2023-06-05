@@ -1,17 +1,18 @@
+/*
+   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
+   Author: Sara Echeverria
+   FileName: Headline.module.css
+   Version: I
+   Creation: 04/06/2023
+   Last modification: 04/06/2023
+*/
+
 .menuItems {
     display: flex;
     align-items: center;
     padding: 0 16px;
     cursor: pointer;
     margin-top: 1%; 
-}
-
-.icon {
-    height: 17px;
-    min-width: 20px;
-    width: 17px;
-    z-index: auto;
-    color: #fff;
 }
 
 .item {
@@ -51,4 +52,12 @@
     transform: scaleX(1);
     visibility: visible;
     opacity: 1 !important;
+}
+
+.icon {
+    height: 17px;
+    min-width: 20px;
+    width: 17px;
+    z-index: auto;
+    color: #fff;
 }

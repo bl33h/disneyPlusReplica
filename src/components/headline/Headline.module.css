@@ -1,3 +1,13 @@
+/*
+   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
+   Author: Sara Echeverria
+   FileName: Headline.module.css
+   Version: I
+   Creation: 04/06/2023
+   Last modification: 04/06/2023
+*/
+
+
 .header {
     position: fixed;
     top: 0;
@@ -38,6 +48,13 @@
     margin-left: 25px;
 }
 
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 90%;
+}
+
 .user {
     display: flex;
     align-items: center;
@@ -58,13 +75,6 @@
     font-size: 15px;
     line-height: 1.5;
     font-family: Avenir-World-for-Disney-Regular,sans-serif;
-}
-
-.profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 90%;
 }
 
 img {

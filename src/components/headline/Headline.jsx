@@ -1,3 +1,12 @@
+/*
+   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
+   Author: Sara Echeverria
+   FileName: Headline.jsx
+   Version: I
+   Creation: 04/06/2023
+   Last modification: 04/06/2023
+*/
+
 import HeadlineEl from './headlilneEl'
 import styles from './Headline.module.css'
 import dIcon from '../../assets/disneyIcon.svg';
@@ -5,8 +14,8 @@ import profile from '../../assets/belle.png';
 import { useEffect, useState } from 'react'
 import { BiSearch } from 'react-icons/bi';
 import { FaPlus } from 'react-icons/fa'
-import { HiHome, HiStar } from 'react-icons/hi'
 import { GiFilmSpool } from 'react-icons/gi';
+import { HiHome, HiStar } from 'react-icons/hi'
 import { RiTvFill } from 'react-icons/ri'
 
 const Headline = () => {
