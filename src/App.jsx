@@ -7,24 +7,20 @@
    Last modification: 04/06/2023
 */
 
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import './App.css'
+import Headline from './components/headline/Headline.jsx'
+import Home from './pages/Home.jsx'
 
-describe('App component', () => {
-  test('renders without errors', () => {
-    render(<App />);
-  });
+function App() {
 
-  test('renders Headline component', () => {
-    const { getByTestId } = render(<App />);
-    const headlineComponent = getByTestId('headline-component');
-    expect(headlineComponent).toBeInTheDocument();
-  });
+  return (
+    <>
+      <div>
+        <Headline />
+        <Home />
+      </div>
+    </>
+  )
+}
 
-  test('renders Home component', () => {
-    const { getByTestId } = render(<App />);
-    const homeComponent = getByTestId('home-component');
-    expect(homeComponent).toBeInTheDocument();
-  });
-});
+export default App
