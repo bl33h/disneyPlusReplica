@@ -14,7 +14,7 @@ import styles from './Home.module.css';
 import New from '../components/new/New';
 import Comedy from '../components/comedy/Comedy';
 import Movies from '../components/movies/Movies';
-import Headline from '../components/Headline/Headline';
+import Headline from '../components/headline/Headline';
 import Slides from '../components/slides/Slides';
 import Logos from '../components/animations/Logos';
 import Note from '../components/note/Note';
