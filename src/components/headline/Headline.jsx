@@ -7,10 +7,16 @@
    Last modification: 04/06/2023
 */
 
-import HeadlineEl from './HeadlineEl';
 import styles from './Headline.module.css';
+
+// components
+import HeadlineEl from './HeadlineEl';
+
+// media
 import dIcon from '../../assets/disneyIcon.svg';
 import profile from '../../assets/belle.png';
+
+// react icons
 import { useEffect, useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import { FaPlus } from 'react-icons/fa';

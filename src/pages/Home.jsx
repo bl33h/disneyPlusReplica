@@ -8,10 +8,17 @@
 */
 
 import React, { useState } from 'react';
+import styles from './Home.module.css';
+
+// components
 import Headline from '../components/headline/Headline';
 import Slides from '../components/slides/Slides';
+import Logos from '../components/animations/Logos';
+
+// react icons
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import styles from './Home.module.css';
+
+// carousel media
 import c1 from '../assets/c1.png';
 import c2 from '../assets/c2.png';
 import c3 from '../assets/c3.png';
@@ -53,6 +60,7 @@ const Home = () => {
           <Slides slides={slides} imgSlide={imgSlide} />
         </div>
       </div>
+      <Logos />
     </div>
   );
 };
