@@ -17,6 +17,7 @@ import Movies from '../components/movies/Movies';
 import Headline from '../components/Headline/Headline';
 import Slides from '../components/slides/Slides';
 import Logos from '../components/animations/Logos';
+import Note from '../components/note/Note';
 
 // react icons
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -50,28 +51,30 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.main}>
-      <Headline />
-      <div className={styles.carousel}>
-        <div className={styles.left} onClick={prevSld}>
-          <IoIosArrowBack className={styles.arrows} />
-        </div>
-        <div className={styles.right} onClick={nextSld}>
-          <IoIosArrowForward className={styles.arrows} />
-        </div>
-        <div className={styles.imgSlides}>
-          <Slides slides={slides} imgSlide={imgSlide} />
-        </div>
+  <div className={styles.main}>
+    <Headline />
+    <div className={styles.carousel}>
+      <div className={styles.left} onClick={prevSld}>
+        <IoIosArrowBack className={styles.arrows} />
       </div>
-      <Logos />
-      <h3 style={{ textAlign: 'left' }}>Novedades en Disney+</h3>
-      <New />
-      <h3 style={{ textAlign: 'left' }}>Comedias</h3>
-      <Comedy />
-      <h3 style={{ textAlign: 'left' }}>Películas principales</h3>
-      <Movies />
+      <div className={styles.right} onClick={nextSld}>
+        <IoIosArrowForward className={styles.arrows} />
+      </div>
+      <div className={styles.imgSlides}>
+        <Slides slides={slides} imgSlide={imgSlide} />
+      </div>
     </div>
-  );
-};
+    <Logos />
+    <h3 style={{ textAlign: 'left' }}>Novedades en Disney+</h3>
+    <New />
+    <h3 style={{ textAlign: 'left' }}>Comedias</h3>
+    <Comedy />
+    <h3 style={{ textAlign: 'left' }}>Películas principales</h3>
+    <Movies />
+    <div style={styles.footer}></div>
+    <Note />
+  </div>
+);
+}
 
 export default Home;
