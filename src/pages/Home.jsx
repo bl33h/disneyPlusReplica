@@ -29,6 +29,7 @@ import c5 from '../assets/media/c5.png';
 
 const Home = () => {
   const [imgSlide, setImgSlide] = useState(0);
+  const [transitionClass, setTransitionClass] = useState('');
 
   const slides = [
     { img: c1 },
@@ -45,7 +46,11 @@ const Home = () => {
 
   const nextSld = () => {
     setImgSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
+    setTransitionClass('slideTransition');
+    setTimeout(() => {
+      setTransitionClass('');
+    }, 500);
+  };  
 
   useEffect(() => {
     const interval = setInterval(nextSld, 5000);
@@ -66,7 +71,7 @@ const Home = () => {
           <IoIosArrowForward className={styles.arrows} />
         </div>
         <div className={styles.imgSlides}>
-          <Slides slides={slides} imgSlide={imgSlide} />
+          <Slides slides={slides} imgSlide={imgSlide} transitionClass={transitionClass}/>
         </div>
       </div>
       <Logos />

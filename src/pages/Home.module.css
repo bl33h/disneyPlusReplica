@@ -7,6 +7,10 @@
    Last modification: 04/06/2023
 */
 
+.slideTransition {
+  transition: transform 0.5s ease-in-out;
+}
+
 .imgSlides {
     display: flex;
     justify-content: center;
