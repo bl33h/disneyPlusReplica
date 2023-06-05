@@ -25,8 +25,9 @@ import { HiHome, HiStar } from 'react-icons/hi';
 import { RiTvFill } from 'react-icons/ri';
 
 const Headline = () => {
+  
   const [isScrolled, setIsScrolled] = useState(false);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -76,7 +77,7 @@ const Headline = () => {
         ))}
       </div>
       <div className={styles.user}>
-        <p className={styles.username}>Sara</p>
+        <p className={styles.username } >Sara</p>
         <img src={profile} className={styles.profile} />
       </div>
     </div>

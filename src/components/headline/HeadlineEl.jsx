@@ -10,7 +10,7 @@
 import React from 'react'
 import styles from './HeadlineEl.module.css'
 
-const HeadlineE = ({ name, Icon }) => {
+const HeadlineEl = ({ name, Icon }) => {
   return (
     <div className={styles.menuItems}>
         <Icon className={styles.icon}/>
@@ -19,4 +19,4 @@ const HeadlineE = ({ name, Icon }) => {
   )
 }
 
-export default HeadlineE
+export default HeadlineEl
