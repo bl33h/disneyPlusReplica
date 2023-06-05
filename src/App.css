@@ -14,20 +14,20 @@
   text-align: center;
 }
 
-.logo {
+.dIcon {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+.dIcon:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
+.dIcon.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+@keyframes dIcon-spin {
   from {
     transform: rotate(0deg);
   }
@@ -37,8 +37,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  a:nth-of-type(2) .dIcon {
+    animation: dIcon-spin infinite 20s linear;
   }
 }
 

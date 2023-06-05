@@ -1,0 +1,73 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 3;
+}
+
+.header--scrolled {
+    background-color: #060509;
+}
+
+.dIcon {
+    padding: 0;
+    width: 75px;
+    max-height: 70px;
+    margin-top: 4px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0;
+    margin-right: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    margin-right: 125%;
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Avenir-World-for-Disney-Regular,sans-serif;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 90%;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
