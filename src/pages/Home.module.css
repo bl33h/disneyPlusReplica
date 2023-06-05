@@ -7,14 +7,6 @@
    Last modification: 04/06/2023
 */
 
-.main {
-    position: relative;
-    min-height: calc(100vh - 250px);
-    overflow-x: hidden;
-    width: 100%;
-    padding: 0 calc(3.5vw + 5px);
-}
-
 .imgSlides {
     display: flex;
     justify-content: center;
@@ -45,51 +37,49 @@
     border-color: white;
 }
 
-
-.image {
-    height: auto;
-    width: 100%;
-}
-
 .carousel {
-    margin-top: 10vh;
-    width: 100%;
-    position: relative;
+  margin-top: 10vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .left,
 .right {
-    cursor: pointer;
-    width: 50px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    z-index: 1;
-    user-select: none;
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  user-select: none;
 
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.2s ease-in;
-    }
+  &:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+  }
 }
 
 .left {
-    left: -50px;
+  left: -50px;
 }
 
 .right {
-    right: -50px;
+  right: -50px;
 }
 
 .arrows {
-    width: 60%;
-    height: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
