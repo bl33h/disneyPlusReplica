@@ -4,11 +4,12 @@
    FileName: Home.jsx
    Version: I
    Creation: 04/06/2023
-   Last modification: 04/06/2023
+   Last modification: 05/06/2023
 */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Home.module.css';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 // components
 import New from '../components/new/New';
@@ -18,9 +19,6 @@ import Headline from '../components/headline/Headline';
 import Slides from '../components/slides/Slides';
 import Logos from '../components/animations/Logos';
 import Note from '../components/note/Note';
-
-// react icons
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 // carousel media
 import c1 from '../assets/media/c1.png';
@@ -46,35 +44,42 @@ const Home = () => {
   };
 
   const nextSld = () => {
-    const nextSlide = imgSlide === slides.length - 1 ? 0 : imgSlide + 1;
-    setImgSlide(nextSlide);
+    setImgSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(nextSld, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
-  <div className={styles.main}>
-    <Headline />
-    <div className={styles.carousel}>
-      <div className={styles.left} onClick={prevSld}>
-        <IoIosArrowBack className={styles.arrows} />
+    <div className={styles.main}>
+      <Headline />
+      <div className={styles.carousel}>
+        <div className={styles.left} onClick={prevSld}>
+          <IoIosArrowBack className={styles.arrows} />
+        </div>
+        <div className={styles.right} onClick={nextSld}>
+          <IoIosArrowForward className={styles.arrows} />
+        </div>
+        <div className={styles.imgSlides}>
+          <Slides slides={slides} imgSlide={imgSlide} />
+        </div>
       </div>
-      <div className={styles.right} onClick={nextSld}>
-        <IoIosArrowForward className={styles.arrows} />
-      </div>
-      <div className={styles.imgSlides}>
-        <Slides slides={slides} imgSlide={imgSlide} />
-      </div>
+      <Logos />
+      <h3 style={{ textAlign: 'left' }}>Novedades en Disney+</h3>
+      <New />
+      <h3 style={{ textAlign: 'left' }}>Comedias</h3>
+      <Comedy />
+      <h3 style={{ textAlign: 'left' }}>Películas principales</h3>
+      <Movies />
+      <div style={styles.footer}></div>
+      <Note />
     </div>
-    <Logos />
-    <h3 style={{ textAlign: 'left' }}>Novedades en Disney+</h3>
-    <New />
-    <h3 style={{ textAlign: 'left' }}>Comedias</h3>
-    <Comedy />
-    <h3 style={{ textAlign: 'left' }}>Películas principales</h3>
-    <Movies />
-    <div style={styles.footer}></div>
-    <Note />
-  </div>
-);
+  );
 }
 
 export default Home;
