@@ -13,6 +13,7 @@ import styles from './Home.module.css';
 // components
 import New from '../components/new/New';
 import Comedy from '../components/comedy/Comedy';
+import Movies from '../components/movies/Movies';
 import Headline from '../components/Headline/Headline';
 import Slides from '../components/slides/Slides';
 import Logos from '../components/animations/Logos';
@@ -67,6 +68,8 @@ const Home = () => {
       <New />
       <h3 style={{ textAlign: 'left' }}>Comedias</h3>
       <Comedy />
+      <h3 style={{ textAlign: 'left' }}>Películas principales</h3>
+      <Movies />
     </div>
   );
 };
