@@ -1,0 +1,26 @@
+/*
+   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
+   Author: Sara Echeverria
+   FileName: Slides.modules.css
+   Version: I
+   Creation: 04/06/2023
+   Last modification: 04/06/2023
+*/
+
+.imgContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgSlide {
+    z-index: 1;
+}
+
+.imgTitle {
+    position: absolute;
+    margin-top: 2.5vw;
+    margin-left: 6vw;
+    width: 28%;
+    z-index: 2;
+}
