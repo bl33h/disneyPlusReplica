@@ -13,8 +13,8 @@ import styles from './Headline.module.css';
 import HeadlineEl from './HeadlineEl';
 
 // media
-import dIcon from '../../assets/disneyIcon.svg';
-import profile from '../../assets/belle.png';
+import dIcon from '../../assets/logos/disneyIcon.svg';
+import profile from '../../assets/logos/belle.png';
 
 // react icons
 import { useEffect, useState } from 'react';

@@ -1,0 +1,14 @@
+/*
+   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
+   Author: Sara Echeverria
+   FileName: Comedy.module.css
+   Version: I
+   Creation: 04/06/2023
+   Last modification: 04/06/2023
+*/
+
+.view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

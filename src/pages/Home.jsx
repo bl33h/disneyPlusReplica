@@ -11,7 +11,9 @@ import React, { useState } from 'react';
 import styles from './Home.module.css';
 
 // components
-import Headline from '../components/headline/Headline';
+import New from '../components/new/New';
+import Comedy from '../components/comedy/Comedy';
+import Headline from '../components/Headline/Headline';
 import Slides from '../components/slides/Slides';
 import Logos from '../components/animations/Logos';
 
@@ -19,11 +21,11 @@ import Logos from '../components/animations/Logos';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 // carousel media
-import c1 from '../assets/c1.png';
-import c2 from '../assets/c2.png';
-import c3 from '../assets/c3.png';
-import c4 from '../assets/c4.png';
-import c5 from '../assets/c5.png';
+import c1 from '../assets/media/c1.png';
+import c2 from '../assets/media/c2.png';
+import c3 from '../assets/media/c3.png';
+import c4 from '../assets/media/c4.png';
+import c5 from '../assets/media/c5.png';
 
 const Home = () => {
   const [imgSlide, setImgSlide] = useState(0);
@@ -61,6 +63,10 @@ const Home = () => {
         </div>
       </div>
       <Logos />
+      <h3 style={{ textAlign: 'left' }}>Novedades en Disney+</h3>
+      <New />
+      <h3 style={{ textAlign: 'left' }}>Comedias</h3>
+      <Comedy />
     </div>
   );
 };

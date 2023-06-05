@@ -11,18 +11,18 @@ import Structure from './Structure'
 import styles from './Logos.module.css'
 
 // names
-import disneyIcon from '../../assets/disn.png'
-import pixarIcon from '../../assets/px.png'
-import marvelIcon from '../../assets/marvel.png'
-import starwarsIcon from '../../assets/sw.png'
-import natgeoIcon from '../../assets/ng.png'
+import disneyIcon from '../../assets/logos/disn.png'
+import pixarIcon from '../../assets/logos/px.png'
+import marvelIcon from '../../assets/logos/marvel.png'
+import starwarsIcon from '../../assets/logos/sw.png'
+import natgeoIcon from '../../assets/logos/ng.png'
 
 // animations vid
-import diss from '../../assets/diss.mp4'
-import marv from '../../assets/marv.mp4'
-import ntg from '../../assets/ntg.mp4'
-import sws from '../../assets/sws.mp4'
-import pix from '../../assets/pix.mp4'
+import diss from '../../assets/vids/diss.mp4'
+import marv from '../../assets/vids/marv.mp4'
+import ntg from '../../assets/vids/ntg.mp4'
+import sws from '../../assets/vids/sws.mp4'
+import pix from '../../assets/vids/pix.mp4'
 
 const Logos = () => {
 
