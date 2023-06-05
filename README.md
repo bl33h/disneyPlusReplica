@@ -7,7 +7,7 @@ A  replica of the Disney+ principal page built using React and Vite. The Vitest 
   <br>
 </p>
 
-<h4 align="center"> Copy of the Disney+ homepage made in React </h4>
+<h4 align="center"> Disney+ principal page replica</h4>
 
 
 <p align="center" >
