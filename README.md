@@ -47,8 +47,7 @@ $ npm install --save-dev vitest @testing-library/react @testing-library/jest-dom
 
 ## How To Use
 
-To clone and run this application, you'll need [Git]
-(https://git-scm.com) and [Vite] (https://vitejs.dev/) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Vite](https://vitejs.dev/) installed on your computer. From your command line:
 
 ```bash
 
